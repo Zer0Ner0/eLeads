@@ -1,7 +1,7 @@
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
-using API.Controllers.Interfaces;
+using API.Interfaces;
 using API.Data;
 using API.DTOs;
 using API.Entities;
