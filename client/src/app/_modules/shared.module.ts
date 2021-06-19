@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { TabsModule } from 'ngx-bootstrap/tabs';
+import { NgxGalleryModule } from '@kolkov/ngx-gallery';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { TabsModule } from 'ngx-bootstrap/tabs';
     ToastrModule.forRoot({
       positionClass: 'toast-bottom-right'
     }),
-    TabsModule.forRoot()
+    TabsModule.forRoot(),
+    NgxGalleryModule
   ],
   exports: [
     BrowserModule,
@@ -34,7 +36,8 @@ import { TabsModule } from 'ngx-bootstrap/tabs';
     CommonModule,
     BsDropdownModule,
     ToastrModule,
-    TabsModule
+    TabsModule,
+    NgxGalleryModule
   ]
 })
 export class SharedModule { }
