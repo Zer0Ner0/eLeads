@@ -7,7 +7,7 @@ import { AppRoutingModule } from '../app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
-
+import { TabsModule } from 'ngx-bootstrap/tabs';
 
 
 @NgModule({
@@ -22,7 +22,8 @@ import { FormsModule } from '@angular/forms';
     BsDropdownModule.forRoot(),
     ToastrModule.forRoot({
       positionClass: 'toast-bottom-right'
-    })
+    }),
+    TabsModule.forRoot()
   ],
   exports: [
     BrowserModule,
@@ -32,7 +33,8 @@ import { FormsModule } from '@angular/forms';
     FormsModule,
     CommonModule,
     BsDropdownModule,
-    ToastrModule
+    ToastrModule,
+    TabsModule
   ]
 })
 export class SharedModule { }
